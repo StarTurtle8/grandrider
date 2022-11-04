@@ -1,11 +1,50 @@
 html, body {
   display: flex;
   flex-direction: column;
-  font-family: Roboto, sans-serif;
-  background-image: url(images/640381.jpg);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url(images/etrianwallpaper.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
   margin: 0;
   padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+}
+
+.kaban {
+  height: auto;
+  min-height: 10vh;
+  width: auto;
+}
+
+.headertext {
+  display: flex;
+  min-width: 8vw;
+  margin-bottom: -1frpx;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.9;
+  border-radius: 50px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  visibility: hidden;
+  height: 6vh;
+  min-height: 4vh;
+}
+
+.kaban:hover ~ .headertext {
+  visibility: visible;
+  background-color: rgb(104, 22, 53);
 }
 
 .linkimage {
