@@ -40,6 +40,7 @@ html, body {
   visibility: hidden;
   height: 6vh;
   min-height: 4vh;
+  font-weight: bold;
 }
 
 .kaban:hover ~ .headertext {
