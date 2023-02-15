@@ -26,25 +26,28 @@ html, body {
 }
 
 .headertext {
+  -webkit-backface-visibility: hidden;
   display: flex;
   min-width: 8vw;
   margin-bottom: -1frpx;
   align-items: center;
   text-align: center;
   justify-content: center;
-  opacity: 0.9;
+  opacity: 0;
   border-radius: 50px;
+  visibility: hidden;
   padding-left: 1vw;
   padding-right: 1vw;
-  visibility: hidden;
   height: 6vh;
   min-height: 4vh;
   font-weight: bold;
+  transition: all 0.3s ease-out
 }
 
 .kaban:hover ~ .headertext {
   visibility: visible;
   background-color: rgb(104, 22, 53);
+  opacity: 1;
 }
 
 .linkimage {
