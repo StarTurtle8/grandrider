@@ -102,9 +102,9 @@ html, body {
   animation-fill-mode: forwards;
 }
 
-.footer:hover img {
+/* .footer:hover img {
   visibility: hidden;
-}
+} */
 
 /* .footer:hover {
   position: fixed;
