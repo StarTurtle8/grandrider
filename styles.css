@@ -9,6 +9,7 @@ html, body {
   background-position: center;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .header {
@@ -61,6 +62,8 @@ html, body {
 .main {
   display: flex;
   justify-content: center;
+  /* animation-duration: 1s;
+  animation-name: slidein; */
   
 }
 
@@ -87,19 +90,50 @@ html, body {
 }
 
 .footer {
-  position: fixed;
-  right: 55px;
-  bottom: 0;
+  position: absolute;
+  /* right: 55px; */
+  top: 0;
   height: auto;
-  width: 55px;
-}
-
-.footer:hover {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  /* width: 55px; */
+  animation-duration: 60s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .footer:hover img {
+  visibility: hidden;
+}
+
+/* .footer:hover {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+} */
+
+/* .footer:hover img {
   transform: scaleX(-1);
+} */
+
+@keyframes slidein {
+  0% {
+    left: 0%;
+    transform: rotateY(0deg);
+  }
+  49.5% {
+    left: 90%;
+    transform: rotateY(0deg);
+  }
+  50.5% {
+    left: 90%;
+    transform: rotateY(180deg);
+  }
+  99.5% {
+    left: 0%;
+    transform: rotateY(180deg);
+  }
+  100% {
+    left: 0%;
+  }
 }
