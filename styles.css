@@ -35,6 +35,7 @@ html, body {
   text-align: center;
   justify-content: center;
   opacity: 0;
+  color: pink;
   border-radius: 50px;
   visibility: hidden;
   padding-left: 1vw;
@@ -122,11 +123,11 @@ html, body {
     transform: rotateY(0deg);
   }
   49.5% {
-    left: 90%;
+    left: 95%;
     transform: rotateY(0deg);
   }
   50.5% {
-    left: 90%;
+    left: 95%;
     transform: rotateY(180deg);
   }
   99.5% {
